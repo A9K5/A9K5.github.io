@@ -1,0 +1,155 @@
+<head prefix="og: http://ogp.me/ns#">
+    <link rel="preconnect" href="https://interactive-examples.mdn.mozilla.net" pr="0.75">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script async="" src="https://lux.speedcurve.com/lux/?v=206&amp;id=108906238&amp;sid=159639148522121904&amp;uid=159639148522121904&amp;l=%3Ctitle%3E%3A%20The%20Document%20Title%20element%20-%20HTML%3A%20Hypertext%20Markup%20Language%20%7C%20MDN&amp;IX=s|36008,c|63008,cx|1215,cy|104,ci|wikiArticle&amp;FID=3&amp;HN=developer.mozilla.org"></script>
+    <script async="" src="https://lux.speedcurve.com/lux/?v=206&amp;id=108906238&amp;sid=159639148522121904&amp;uid=159639148522121904&amp;l=%3Ctitle%3E%3A%20The%20Document%20Title%20element%20-%20HTML%3A%20Hypertext%20Markup%20Language%20%7C%20MDN&amp;NT=1596391480457rs5re2677fs2677ds2677de2677cs2677ce2677qs2686bs3157be3227ol3183oi4230os5057oe5057oc5715ls5715le5715&amp;LJS=d37t107f68c7n219e2r10x6923l3660s4763&amp;PS=ns7bs0is70808ss9bc8ic674ia0it12dd12nd1241vh821vw1440dh4737dw1440ds39298ct4G_er0nt0dm8&amp;CPU=s|1226,n|4,d|319,x|508,3753|445,4235|508,4767|193,4963|80&amp;fl=8&amp;HN=developer.mozilla.org&amp;CLS=0.000000&amp;UT=LUX_end|6078"></script>
+    <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+    
+    <title>&lt;title&gt;: The Document Title element - HTML: Hypertext Markup Language | MDN</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+  
+    
+  <link rel="preload" href="/static/fonts/locales/ZillaSlab-Regular.subset.bbc33fb47cf6.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/static/fonts/locales/ZillaSlab-Bold.subset.e96c15f68c68.woff2" as="font" type="font/woff2" crossorigin="">
+  
+    <link rel="home" href="/en-US/">
+    <link rel="license" href="#license">
+  
+    <link href="/static/build/styles/react-header.78d662924939.css" rel="stylesheet" type="text/css">
+    <link href="/static/build/styles/auth-modal.be43f0f58a73.css" rel="stylesheet" type="text/css">
+    <link href="/static/build/styles/react-mdn.4e0ead71927e.css" rel="stylesheet" type="text/css">
+    <link href="/static/build/styles/subscriptions.3cebf84de805.css" rel="stylesheet" type="text/css">
+  
+    <link href="/static/build/styles/prism.a6f275e5032b.css" rel="stylesheet" type="text/css">
+  
+    
+  <style>
+      @font-face {
+          font-family: zillaslab;
+          font-display: swap;
+          src: url(/static/fonts/locales/ZillaSlab-Regular.subset.bbc33fb47cf6.woff2) format('woff2'),
+               url(/static/fonts/locales/ZillaSlab-Regular.subset.0357f12613a7.woff) format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+  
+      @font-face {
+          font-family: zillaslab;
+          font-display: swap;
+          src: url(/static/fonts/locales/ZillaSlab-Bold.subset.e96c15f68c68.woff2) format('woff2'),
+               url(/static/fonts/locales/ZillaSlab-Bold.subset.da0ccde4ca4a.woff) format('woff');
+          font-weight: bold;
+          font-style: normal;
+      }
+  </style>
+  
+  
+    
+  <script>
+      // Mozilla DNT Helper
+      /* This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. */ if(typeof Mozilla==='undefined'){var Mozilla={}}Mozilla.dntEnabled=function(dnt,ua){'use strict';var dntStatus=dnt||navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack;var userAgent=ua||navigator.userAgent;var anomalousWinVersions=['Windows NT 6.1','Windows NT 6.2','Windows NT 6.3'];var fxMatch=userAgent.match(/Firefox\/(\d+)/);var ieRegEx=/MSIE|Trident/i;var isIE=ieRegEx.test(userAgent);var platform=userAgent.match(/Windows.+?(?=;)/g);if(isIE&&typeof Array.prototype.indexOf!=='function'){return false}else if(fxMatch&&parseInt(fxMatch[1],10)<32){dntStatus='Unspecified'}else if(isIE&&platform&&anomalousWinVersions.indexOf(platform.toString())!==-1){dntStatus='Unspecified'}else{dntStatus={'0':'Disabled','1':'Enabled'}[dntStatus]||'Unspecified'}return dntStatus==='Enabled'?true:false};
+      // only load GA if DNT is not enabled
+      if (Mozilla && !Mozilla.dntEnabled()) {
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-36116321-5', 'mozilla.org');
+          ga('set', 'anonymizeIp', true);
+      }
+  </script>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  
+  
+    <script>
+  LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({entryTypes:["longtask"],buffered:true})}catch(e){}};
+  </script>
+  <script src="https://cdn.speedcurve.com/js/lux.js?id=108906238" async="" defer="" crossorigin="anonymous"></script>
+  
+  
+    <script>
+    window.fetch || document.write('<script src="/static/build/js/fetch-polyfill.63fdc379c7eb.js"><\/script>');
+  </script>
+  <script>
+    // Only include the fat polyfill for browsers that seem to not have
+    // certain JS features. E.g. Firefox 38.
+    Array.prototype.includes || document.write('<script src="/static/build/js/js-polyfill.6f2e22100487.js"><\/script>');
+  </script>
+  
+    <script async="" type="text/javascript" src="/static/build/js/perf.654b849a6fd9.js" charset="utf-8"></script>
+  
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png">
+    <meta property="og:site_name" content="MDN Web Docs">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="MDN Web Docs">
+  
+    <!-- third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/img/favicon144.e7e21ca263ca.png">
+    <!-- iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/img/favicon114.d526f38b09c5.png">
+    <!-- first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/img/favicon72.cc65d1d762a0.png">
+    <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/static/img/favicon57.de33179910ae.png">
+    <!-- basic favicon -->
+    <link rel="shortcut icon" href="/static/img/favicon32.7f3da72dcea1.png">
+  
+    <link href="/static/build/styles/banners.e6cd46767c2e.css" rel="stylesheet" type="text/css">
+  
+  
+  
+  <link href="/static/build/styles/mdn-subscriptions.dbb82432d74c.css" rel="stylesheet" type="text/css">
+  <link href="/static/build/styles/l10n-survey.0eeb824ed1eb.css" rel="stylesheet" type="text/css">
+  
+  
+    <link rel="canonical" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">
+  
+    
+    <link rel="alternate" hreflang="en" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" title="<title>: The Document Title element">
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/HTML/Element/title" title="<title>">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/title" title="title">
+    
+      <link rel="alternate" hreflang="fi" href="https://developer.mozilla.org/fi/docs/Web/HTML/Element/title" title="<title>: Dokumentin otsikkoelementti">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/title" title="<title> : l'élément de titre du document">
+    
+      <link rel="alternate" hreflang="he" href="https://developer.mozilla.org/he/docs/Web/HTML/Element/title" title="<title>: תגית כותרת">
+    
+      <link rel="alternate" hreflang="it" href="https://developer.mozilla.org/it/docs/Web/HTML/Element/title" title="<title>">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/title" title="<title>: 文書題名要素">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/title" title="<title>: 문서 제목 요소">
+    
+      <link rel="alternate" hreflang="pl" href="https://developer.mozilla.org/pl/docs/Web/HTML/Element/title" title="<title>: Element Tytułu Dokumentu">
+    
+      <link rel="alternate" hreflang="pt" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/title" title="<title>: O titulo do documento.">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/title" title="<title>: элемент заголовка документа">
+    
+      <link rel="alternate" hreflang="zh" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title" title="<title>">
+    
+  
+    <!-- document-specific social tags -->
+    <meta property="og:title" content="<title>: The Document Title element">
+    <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">
+    <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">
+    <meta name="twitter:title" content="<title>: The Document Title element">
+    
+    <meta property="og:description" content="The HTML Title element (title) defines the document's title that is shown in a browser's title bar or a page's tab.">
+    <meta name="description" content="The HTML Title element (title) defines the document's title that is shown in a browser's title bar or a page's tab.">
+    <meta name="twitter:description" content="The HTML Title element (title) defines the document's title that is shown in a browser's title bar or a page's tab.">
+    
+  
+    
+      <link href="/static/build/styles/print.ca192a439743.css" rel="stylesheet" type="text/css" media="print">
+    
+  </head>
