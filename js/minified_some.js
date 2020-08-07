@@ -1,0 +1,1 @@
+M.AutoInit(),document.addEventListener("DOMContentLoaded",function(){var n=document.querySelectorAll(".fixed-btn");M.FloatingActionButton.init(n,options)}),document.addEventListener("DOMContentLoaded",function(){var n=document.querySelectorAll(".sidenav");M.Sidenav.init(n,options)});
